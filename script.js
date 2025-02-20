@@ -8,7 +8,7 @@ const getSum = () => {
 	let sum =0;
 	for(let x of prices)sum+=parseInt(x.textContent);
 	const element = document.createElement("tr");
-	element.innerHTML = `<td>${sum}</td>`;
+	element.innerHTML = `<td id="ans">${sum}</td>`;
 	const table = document.querySelector("table");
 	table.appendChild(element);
   
